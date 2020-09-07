@@ -13,5 +13,7 @@ I kan finde eksempler på 'product cards" hos [Dribbble](https://dribbble.com/se
 * Prisen svarer til én unit, og skal derfor ganges med bulkSize for at vise prisen for et kolli. Den pris skal returneres.
 * Udover disse krav, så er det op til jer hvor flot I vil gøre det designetmæssigt, og om I vil returnere andet.
 
+Lav et repo på GitHub og upload det løbende, så I kan vise det til mig, eller hinanden.
+
 Det vigtigste værktøj i har i Javascript (React eller Node), er **console.log()**. Brug den, og brug den ofte!
 Hvis I løber i problemer, så kan I enten bruge hinanden, eller I kan skrive til mig. Det vigtigste er bare at I bruger den **guide til problemløsning** som jeg har givet jer. **Reducer problemet!**
