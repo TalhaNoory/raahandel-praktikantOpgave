@@ -5,7 +5,7 @@ Jeres opgave bliver at returnere dataen fra det array, i filen 'productList.js',
 I kan finde eksempler på 'product cards" hos [Dribbble](https://dribbble.com/search/product%20card) eller på vores [markedsplads](https://markedsplads.raahandel.dk/), under alle varer. **Det vigtige er ikke designet, men selve funktionen**.
 
 ## Opgavekrav
-* I skal bruge .map til at returnere de 5 varer i array'et. Alle skal vises.
+* I skal importere 'productList.js' og bruge .map til at returnere de 5 varer i array'et. Alle skal vises.
 * Alle varer skal bygges op omkring et component, som er genbrugeligt, og returneres X antal gange. Alt efter hvor mange der er i array'et. Altså hvis vi tilføjede en vare mere, så skal den kunne vises uden yderligere kode.
 * Kortene skal vise titel, type, producent og billede.
 * Enhedsmængde og kollimængde skal vises.
