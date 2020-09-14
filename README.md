@@ -40,7 +40,7 @@ query {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;role  
-    }  
+&nbsp;&nbsp;&nbsp;&nbsp;}  
 }
 
 ### Brug Fetch eller Axios til at hente dataen ind i jeres React App.
