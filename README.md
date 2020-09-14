@@ -35,49 +35,49 @@ query {
 }
 
 ### Hent alle brugere".
-query {
-    allUsers {
-        id
-        name
-        role
-    }
+query {  
+&nbsp;&nbsp;&nbsp;&nbsp;allUsers {  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;role  
+    }  
 }
 
 ### Brug Fetch eller Axios til at hente dataen ind i jeres React App.
 ### Fetch
-fetch({
-    url: 'http://localhost:3000/graphql',
-    method: 'POST',
-    body: JSON.stringify({ query:
-        'query allUsers {
-            id
-            name
-            role
-        }'
-    })
+fetch({  
+&nbsp;&nbsp;&nbsp;&nbsp;url: 'http://localhost:3000/graphql',  
+&nbsp;&nbsp;&nbsp;&nbsp;method: 'POST',  
+&nbsp;&nbsp;&nbsp;&nbsp;body: JSON.stringify({ query:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'query allUsers {  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;role  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'  
+&nbsp;&nbsp;&nbsp;&nbsp;})  
 })
-.then(response => response.json())
-.then(json => {
-    console.log(result);
+.then(response => response.json())  
+.then(json => {  
+&nbsp;&nbsp;&nbsp;&nbsp;console.log(result);  
 })
 
 ### Axios
-axios({
-    url: 'http://localhost:3000/graphql',
-    method: 'POST',
-    data: JSON.stringify({ query: 
-        'query allUsers { 
-            id
-            name 
-            role 
-        }' 
-    })
-})
-.then(res => {
-    console.log(res);
+axios({  
+&nbsp;&nbsp;&nbsp;&nbsp;url: 'http://localhost:3000/graphql',  
+&nbsp;&nbsp;&nbsp;&nbsp;method: 'POST',  
+&nbsp;&nbsp;&nbsp;&nbsp;data: JSON.stringify({ query:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'query allUsers {  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;role   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'  
+&nbsp;&nbsp;&nbsp;&nbsp;})  
+})  
+.then(res => {  
+&nbsp;&nbsp;&nbsp;&nbsp;console.log(res);  
 })
 
-De ligner hinanden, så det er en smagssag om hvilken I vil bruge. Som I også kan se, så den query I brugte i jeres GraphQL, skal sættes ind jeres data request.
+De ligner hinanden, så det er en smagssag om hvilken I vil bruge. Som I også kan se, så den query I brugte i jeres GraphQL, skal sættes ind jeres data request.  
 Da det er nogle nye navne og endpoints I arbejder med, så er det **vigtigt at I bruger console.log()**, da I nok ikke bare kan sætte det direkte ind og regne med at det vil virke med jeres produkt kort.
 
 ## Opgavekrav
@@ -91,5 +91,5 @@ Da det er nogle nye navne og endpoints I arbejder med, så er det **vigtigt at I
 
 Lav et repo på GitHub og upload det løbende, så I kan vise det til mig, eller hinanden.
 
-Det vigtigste værktøj i har i Javascript (React eller Node), er **console.log()**. Brug den, og brug den ofte!
+Det vigtigste værktøj i har i Javascript (React eller Node), er **console.log()**. Brug den, og brug den ofte!  
 Hvis I løber i problemer, så kan I enten bruge hinanden, eller I kan skrive til mig. Det vigtigste er bare at I bruger den **guide til problemløsning** som jeg har givet jer. **Reducer problemet!**
