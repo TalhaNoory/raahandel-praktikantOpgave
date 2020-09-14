@@ -27,11 +27,11 @@ GraphQL bruger double quotations, så I vil opleve at i får fejl hvis i bruger 
 ## GraphQL Eksempel
 ### Hent brugeren med id'et "ckf2ahphm000901ji4jdccjvu".
 query {  
-    User(id: "ckf2ahphm000901ji4jdccjvu") {  
-        id
-        name
-        role
-    }
+&nbsp;&nbsp;&nbsp;&nbsp;User(id: "ckf2ahphm000901ji4jdccjvu") {  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;role  
+&nbsp;&nbsp;&nbsp;&nbsp;}  
 }
 
 ### Hent alle brugere".
