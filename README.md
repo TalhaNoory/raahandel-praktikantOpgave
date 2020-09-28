@@ -88,6 +88,19 @@ Da det er nogle nye navne og endpoints I arbejder med, så er det **vigtigt at I
 * Udskift den tidligere import til jeres map, med den nye via Fetch eller Axios.
 * Ligesom med product cards, så skal I lave user cards.
 
+# 3. React Router
+Nu hvor I har jeres product og user cards, som I henter ind med GraphQL, så er det på tide at gøre de kort mere brugbare. Først skal I lave en side for users, og en side for produkter. Ved hjælp fra React Router skal I linke i mellem dem, så jeg fra produkter kan hoppe til brugere, og omvendt. Derefter skal I bruge React Router til at føre brugeren ind på de specifikke produkter, og brugere, når de trykker på det respektive kort. Inde på de individuelle kort, skal der så kun være information om det specfikke produkt, eller bruger.  
+
+Dette kan opnås ved at pass'e data til URL'en, i form af props. Det mest normale ville at pass'e ID'et, som I derefter kan bruge inde på de specifikke kort, ved at trække ID'et ud af URL'en igen, og bruge til at søge med jeres GraphQL. Man kan også bruge andet, som et navn, hvis man ikke kan tilgå et ID. Men så er det vigtigt at man kun har unikke navne.
+
+## Opgavekrav
+* I skal bruge React Router (React/Links hvis I laver det i Next.js).
+* I skal linke mellem produkter og brugere.
+* Hvert kort skal linke til de respektive brugere, eller produkter.
+* Produkterne skal indeholde yderligere information, som der ikke er plads til på kortet. Her tænker jeg produktbeskrivelserne.
+* Producenternes navne, som indgår i produkt kortene, skal linke til de respektive brugere. **I kan enten bruge deres navne, som nu, eller udskifte deres navn i produktdatabasen, men et array som indeholder deres ID og deres navn.**
+* Dataen under de specifikke kort skal hentes med med GraphQL, baseret på ID eller navn.
+
 
 Lav et repo på GitHub og upload det løbende, så I kan vise det til mig, eller hinanden.
 
